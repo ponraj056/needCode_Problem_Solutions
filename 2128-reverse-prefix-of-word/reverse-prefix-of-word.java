@@ -8,7 +8,7 @@ class Solution {
             arr[j]=i;
             j++;
         }
-        StringBuilder sb=new StringBuilder();
+        //StringBuilder sb=new StringBuilder();
         while(l<r){
             char temp=arr[l];
             arr[l]=arr[r];
@@ -16,7 +16,8 @@ class Solution {
             l++;
             r--;
         }
-        for(char i:arr) sb.append(i);
-    return sb.toString();
+    //     for(char i:arr) sb.append(i);
+    // return sb.toString();
+    return new String(arr);
     }
 }
